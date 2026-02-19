@@ -1,0 +1,242 @@
+<body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css">
+      <link rel="stylesheet" type="text/css" href="./css/bootstrap.bundle.min.js">
+      <link rel="stylesheet" type="text/css" href="./css/portfolio.css">
+      <title>Anjum's Portfolio</title><link rel="icon" href="images/my_logo(NDT).png">
+
+  <!-- 
+    SASS / SCSS is used in development, here compiled to plain CSS.
+    I include nested selectors and variables (Sass style) but output is standard CSS.
+    No language other than HTML, CSS, Bootstrap (framework), and minimal JS? only for toggle? no: pure CSS.
+    Actually Bootstrap's JS is used for collapsible if we use navbar? I'll avoid JS to be safe. Bootstrap CSS only.
+    But many portfolios use Bootstrap JS for hamburger, but that's JS – not mentioned. So I'll NOT use navbar toggler.
+    Use static layout without interactive JS.
+  -->
+</head>
+<body>
+
+<!-- Navigation (no JS, pure Bootstrap classes with fallback) -->
+<nav class="navbar navbar-expand-md navbar-dark">
+  <div class="container">
+    <span class="navbar-brand" style="color: blue;">Naveed Anjum · Portfolio</span>
+    <div class="collapse navbar-collapse show" id="navbarNav">  <!-- always visible without toggler -->
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a  style="color: blue;" class="nav-link" href="#summary">Home</a></li>
+        <li class="nav-item"><a  style="color: blue;" class="nav-link" href="#experience">Experience</a></li>
+        <li class="nav-item"><a  style="color: blue;" class="nav-link" href="#skills">Skills</a></li>
+        <li class="nav-item"><a  style="color: blue;" class="nav-link" href="#education">Education</a></li>
+        <li class="nav-item"><a style="color: blue;" class="nav-link" href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Header / contact block (Professional Summary area) -->
+<div class="header-section" id="summary">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-lg-8">
+        <h1>Naveed Anjum</h1>
+        <div class="mb-3">
+          <span class="badge-contact"><i class="fas fa-map-marker-alt contact-icon"></i>Lahore, Pakistan</span>
+          <span class="badge-contact"><i class="fas fa-phone-alt contact-icon"></i>+923237038401</span>
+          <span class="badge-contact"><i class="fas fa-envelope contact-icon"></i>mnaveedanjum62@gmail.com</span>
+        </div>
+        <p class="lead" style="color: #2c455d; font-weight: 400;">Dedicated IT Support and Office Management professional with over 14 years at Punjab Curriculum & Textbook Board (PCTB) / PECTAA. Proven track record in administrative tasks, financial adjustment cases, and technical skills in front‑end web development & data analytics.</p>
+        <p class="mt-3"><i class="fas fa-check-circle" style="color: var(--accent);"></i> Recognized for performing duties beyond designated cadre scope due to reliability and competence.</p>
+      </div>
+      <div class="col-lg-4 d-none d-lg-block text-center">
+        <!-- placeholder for subtle visual, just monogram: reflects no extra libraries -->
+        <div style="background: rgba(74,111,165,0.08); border-radius: 50%; width: 200px; height: 200px; margin: 0 auto; display: flex; align-items: center; justify-content: center; border: 3px dashed var(--accent); overflow: hidden;">
+          <span style="font-size: 3rem; font-weight: 300; color: var(--primary);"><img src="./images/Pic(Blue_background).JPG" style="width: 205px; height: 260px; margin-top: 25;"></span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Core Competencies (with tags) -->
+<div class="container mt-5">
+  <div class="row">
+    <div class="col-12">
+      <div class="section-title">Core Competencies</div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-12">
+      <div class="card-custom">
+        <!-- using flex wrap to show all competencies from CV -->
+        <div>
+          <span class="competency-item">Office Administration</span>
+          <span class="competency-item">Document Drafting</span>
+          <span class="competency-item">File Processing</span>
+          <span class="competency-item">Financial Case Preparation</span>
+          <span class="competency-item">External Review Committee</span>
+          <span class="competency-item">IT Support & Troubleshooting</span>
+          <span class="competency-item">Front‑End Web Development</span>
+          <span class="competency-item">HTML / CSS / Sass</span>
+          <span class="competency-item">Bootstrap</span>
+          <span class="competency-item">Database (MySQL)</span>
+          <span class="competency-item">Git & GitHub</span>
+          <span class="competency-item">Netlify Deployment</span>
+          <span class="competency-item">Microsoft Office</span>
+          <span class="competency-item">Inpage (Urdu)</span>
+          <span class="competency-item">AutoCAD 2D/3D</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Professional Experience -->
+<div class="container mt-5" id="experience">
+  <div class="section-title">Professional Experience</div>
+  <div class="row">
+    <div class="col-lg-12">
+      <div class="card-custom exp-item">
+        <h3>Punjab Curriculum & Textbook Board (PCTB, defunct) / PECTAA — Lahore</h3>
+        <div class="meta"><i class="fas fa-calendar-alt"></i> Naib Qasid (Sep 2011 – Present)</div>
+        <ul>
+          <li>Manage daily incoming and outgoing file records for multiple directors, ensuring proper documentation and tracking.</li>
+          <li>Compose official notes, drafts, and letters in both English and Urdu for supervisory officers.</li>
+          <li>Prepare complete files and supporting documents for External Review Committee meetings as per the PCTB Act, 2015.</li>
+          <li>Handle financial documentation: pay orders, acquaintance rolls, and payment proformas for review committee members.</li>
+          <li>Assisted the Deputy Director in preparing two major financial adjustment cases amounting to Rs. 2 million and Rs. 3 million simultaneously (total 5 million).</li>
+          <li>Contributed to preparation of a payment case of approximately Rs. 2.6 million for external review committee members.</li>
+          <li>Supported the development of the Updated / Revised National Curriculum of Pakistan (Chemistry) 2022-23.</li>
+          <li>Manage utility bill processing (Electricity, Water & Sanitation, Internet) and related file initiations for PECTAA.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Education & Technical Skills combined row -->
+<div class="container mt-4" id="education">
+  <div class="row">
+    <div class="col-md-6">
+      <div class="section-title">Education</div>
+      <div class="card-custom mb-4">
+        <div class="mb-4">
+          <div style="font-weight: 700; color: var(--primary);">Bachelor of Science (Computer Science)</div>
+          <div class="text-secondary">Global Institute Lahore (HEC recognized) | 2015 – 2019</div>
+        </div>
+        <div class="mb-3">
+          <div style="font-weight: 600;">Intermediate (Humanities Group)</div>
+          <div class="text-secondary">BISE Lahore | 2013 – 2014</div>
+        </div>
+        <div>
+          <div style="font-weight: 600;">Matric (Humanities Group)</div>
+          <div class="text-secondary">BISE Lahore | 2008 – 2009</div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="section-title">Languages</div>
+      <div class="card-custom">
+        <ul class="list-unstyled ps-0">
+          <li><i class="fas fa-chevron-right" style="color: var(--accent); font-size: 0.8rem;"></i> <strong>English:</strong> Fluent</li>
+          <li class="mt-2"><i class="fas fa-chevron-right" style="color: var(--accent);"></i> <strong>Urdu:</strong> Fluent (Native)</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Technical skills (detailed table from CV) -->
+<div class="container mt-4" id="skills">
+  <div class="section-title">Technical Skills</div>
+  <div class="card-custom">
+    <!-- Using a responsive table / grid that replicates the three columns from CV -->
+    <div class="row">
+      <div class="col-md-4">
+        <h6 class="fw-bold" style="color: var(--secondary);">Front‑End Development</h6>
+        <div><span class="badge-tech">HTML5</span> <span class="badge-tech">CSS3</span> <span class="badge-tech">Sass</span> <span class="badge-tech">Bootstrap</span> <span class="badge-tech">JavaScript (Average)</span></div>
+        <h6 class="fw-bold mt-3" style="color: var(--secondary);">Back-End & Database</h6>
+        <div><span class="badge-tech">Python (Beginner)</span> <span class="badge-tech">Django (Beginner)</span> <span class="badge-tech">MySQL / PHP MyAdmin</span></div>
+      </div>
+      <div class="col-md-4">
+        <h6 class="fw-bold" style="color: var(--secondary);">Deployment & Tools</h6>
+        <div><span class="badge-tech">Netlify</span> <span class="badge-tech">Git & GitHub</span></div>
+        <h6 class="fw-bold mt-3" style="color: var(--secondary);">Design & CAD</h6>
+        <div><span class="badge-tech">Adobe InDesign (Beginner)</span> <span class="badge-tech">AutoCAD 2D/3D, Rendering</span></div>
+      </div>
+      <div class="col-md-4">
+        <h6 class="fw-bold" style="color: var(--secondary);">Productivity & Languages</h6>
+        <div><span class="badge-tech">MS Word/Excel/Outlook</span> <span class="badge-tech">Inpage (Urdu)</span> <span class="badge-tech">Internet Research</span></div>
+        <h6 class="fw-bold mt-3" style="color: var(--secondary);">Administrative</h6>
+        <div><span class="badge-tech">MS PowerPoint</span> <span class="badge-tech">Project Management</span></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Certifications & Trainings -->
+<div class="container mt-4">
+  <div class="section-title">Certifications & Trainings</div>
+  <div class="row">
+    <div class="col-md-6">
+      <div class="card-custom">
+        <div class="cert-item"><i class="fas fa-certificate"></i> <span><strong>Data Science & Analytics</strong> – hp LIFE (HP Foundation) | Certificate of Completion</span></div>
+        <div class="cert-item"><i class="fas fa-certificate"></i> <span><strong>Critical Thinking in the AI Era</strong> – hp LIFE (HP Foundation) | Certificate of Completion</span></div>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="card-custom">
+        <div class="cert-item"><i class="fas fa-certificate"></i> <span><strong>Information Technology (Short Course)</strong> – Al-Falah College of Computer Science</span></div>
+        <div class="cert-item"><i class="fas fa-certificate"></i> <span><strong>AutoCAD (Short Course)</strong> – Vocational Training Institute, Green Town, Lahore</span></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- References -->
+<div class="container mt-4" id="contact">
+  <div class="section-title">References</div>
+  <div class="row">
+    <div class="col-md-6">
+      <div class="ref-item">
+        <div class="ref-name">Mr. Atta Dastgeer</div>
+        <div class="ref-title">Ex-Senior Subject Specialist (Chemistry) / Ex-Deputy Director (Science), PCTB</div>
+        <div class="ref-phone"><i class="fas fa-phone me-2" style="color: var(--accent);"></i>+92 300 4415837</div>
+        <div><i class="fas fa-envelope me-2" style="color: var(--accent);"></i>attadastgeer@gmail.com</div>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="ref-item" style="background: #f2f6fb;">
+        <div class="ref-name">(Additional reference available on request)</div>
+        <div class="ref-title">Consistent performance at PCTB / PECTAA</div>
+      </div>
+    </div>
+  </div>
+  <!-- small note: references from CV exactly -->
+  <p class="mt-3 text-secondary"><i class="fas fa-info-circle"></i> More than 14 years of trusted service – full details available.</p>
+</div>
+
+<!-- Footer -->
+<footer class="footer-custom">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <i class="fas fa-code"></i> Designed with HTML, CSS, Bootstrap (Sass methodology) — only technologies from CV.
+      </div>
+      <div class="col-md-6 text-md-end">
+        <span>Naveed Anjum — <i class="fas fa-envelope"></i> mnaveedanjum62@gmail.com | <i class="fas fa-phone"></i> +923237038401</span>
+      </div>
+    </div>
+    <div class="row mt-3">
+      <div class="col-12 small">
+        <i class="fas fa-check-circle" style="color: var(--accent);"></i> Core technical stack: HTML5, CSS3, Sass, Bootstrap, Git, MySQL, Python (beginner), Netlify.
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- no JavaScript, just static. all styles within declared capabilities. -->
+</body>
+</html>

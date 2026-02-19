@@ -1,0 +1,85 @@
+body {
+  background-color: #f8f9fa;
+}
+
+#logo_navbar {
+  border: 1px solid transparent;
+  margin-top: 2%;
+}
+
+.logo_img {
+  width: 200px;
+  height: 100px;
+}
+
+#logo_name {
+  margin-top: 2%;
+  margin-left: 2%;
+}
+#logo_name a {
+  border: 1px solid transparent;
+  font-family: Verdana;
+  text-decoration: none;
+  color: #6c757d;
+  font-size: 40px;
+  font-weight: bold;
+}
+
+#navbar {
+  border: 1px solid transparent;
+  margin-top: 2%;
+  height: auto;
+  width: auto;
+}
+#navbar .links {
+  border: 1px solid transparent;
+  height: auto;
+  width: auto;
+  padding: 2%;
+}
+#navbar .links a {
+  border: 1px solid transparent;
+  font-family: Verdana;
+  text-decoration: none;
+  color: #6c757d;
+  font-size: 20px;
+  font-weight: bold;
+  height: auto;
+  padding: 2%;
+  margin-left: 2%;
+}
+
+#proj_title {
+  border: 1px solid transparent;
+  margin-top: 5%;
+  margin-left: 5%;
+}
+#proj_title a {
+  font-family: Verdana;
+  text-decoration: none;
+  color: #6c757d;
+  font-size: 80px;
+  font-weight: bold;
+}
+
+#intro_web {
+  border: 1px solid transparent;
+  margin-top: 2%;
+}
+#intro_web #intro_web_line {
+  border: 1px solid transparent;
+}
+#intro_web #intro_web_line hr {
+  border: 1px solid #007bff;
+}
+#intro_web #intro_web_site {
+  border: 1px solid transparent;
+}
+#intro_web #intro_web_site a {
+  border: 1px solid transparent;
+  font-family: Verdana;
+  text-decoration: none;
+  color: #007bff;
+  font-size: 12px;
+  font-weight: bold;
+}/*# sourceMappingURL=portfolio.css.map */
