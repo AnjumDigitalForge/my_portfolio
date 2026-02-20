@@ -22,5 +22,10 @@ from myportfolio import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', views.home, name='home'),
+    path('', views.index, name='index'),
+    path('experience/', views.experience, name='experience'),
+    path('education/', views.education, name='education'),
+    path('skills/', views.skills, name='skills'),
+    path('projects/', views.projects, name='projects'),
+    path('contact/', views.contact, name='contact'),
 ]

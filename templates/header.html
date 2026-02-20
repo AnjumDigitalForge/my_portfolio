@@ -9,14 +9,6 @@
       <link rel="stylesheet" type="text/css" href="./css/portfolio.css">
       <title>Anjum's Portfolio</title><link rel="icon" href="images/my_logo(NDT).png">
 
-  <!-- 
-    SASS / SCSS is used in development, here compiled to plain CSS.
-    I include nested selectors and variables (Sass style) but output is standard CSS.
-    No language other than HTML, CSS, Bootstrap (framework), and minimal JS? only for toggle? no: pure CSS.
-    Actually Bootstrap's JS is used for collapsible if we use navbar? I'll avoid JS to be safe. Bootstrap CSS only.
-    But many portfolios use Bootstrap JS for hamburger, but that's JS – not mentioned. So I'll NOT use navbar toggler.
-    Use static layout without interactive JS.
-  -->
 </head>
 <body>
 
@@ -26,11 +18,12 @@
     <span class="navbar-brand" style="color: blue;">Naveed Anjum · Portfolio</span>
     <div class="collapse navbar-collapse show" id="navbarNav">  <!-- always visible without toggler -->
       <ul class="navbar-nav ms-auto">
-        <li class="nav-item"><a  style="color: blue;" class="nav-link" href="#summary">Home</a></li>
-        <li class="nav-item"><a  style="color: blue;" class="nav-link" href="#experience">Experience</a></li>
-        <li class="nav-item"><a  style="color: blue;" class="nav-link" href="#skills">Skills</a></li>
-        <li class="nav-item"><a  style="color: blue;" class="nav-link" href="#education">Education</a></li>
-        <li class="nav-item"><a style="color: blue;" class="nav-link" href="#contact">Contact</a></li>
+        <li class="nav-item"><a  style="color: blue;" class="nav-link" href="{% url 'index' %}">Home</a></li>
+        <li class="nav-item"><a  style="color: blue;" class="nav-link" href="{% url 'experience' %}">Experience</a></li>
+        <li class="nav-item"><a  style="color: blue;" class="nav-link" href="{% url 'skills' %}">Skills</a></li>
+        <li class="nav-item"><a  style="color: blue;" class="nav-link" href="{% url 'education' %}">Education</a></li>
+        <li class="nav-item"><a  style="color: blue;" class="nav-link" href="{% url 'projects' %}">Projects</a></li>
+        <li class="nav-item"><a style="color: blue;" class="nav-link" href="{% url 'contact' %}">Contact</a></li>
       </ul>
     </div>
   </div>
